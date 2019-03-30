@@ -10052,3 +10052,8 @@ h1.section-title {
 	background: #f6ff00;
 	background: linear-gradient(90deg, #f6ff00 0%, rgba(246, 255, 0, 0) 80%);
 }
+
+.entry-content {
+	font-size: 1.4rem;
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

@@ -107,5 +107,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Bootstrap */
 
+html {
+	min-height: 100%;
+}
+
 @import "cw_bootstrap";
 
+
+@import "elements/header";
+@import "site/home";
+@import "elements/titles";

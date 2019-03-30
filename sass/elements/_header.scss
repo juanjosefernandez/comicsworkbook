@@ -1,0 +1,25 @@
+
+.site-logo {
+	max-width: 260px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.main-navigation {
+	li a {
+		display: inline-block;
+		color: #FF00DC;
+		background-color: white;
+		margin: 0 6px 6px 0;
+		padding: 12px 18px;
+	}
+}
+
+.site-description {
+	font-size: 3.2rem;
+	color: white;
+	background-color: #ff00dc;
+	clear: both;
+	margin: 15px 0;
+	padding: 0 6px;
+}

@@ -976,6 +976,10 @@ object {
 }
 
 /* Bootstrap */
+html {
+	min-height: 100%;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9965,4 +9969,86 @@ a.text-dark:hover, a.text-dark:focus {
 		color: inherit;
 		border-color: #dee2e6;
 	}
+}
+
+.site-logo {
+	max-width: 260px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.main-navigation li a {
+	display: inline-block;
+	color: #FF00DC;
+	background-color: white;
+	margin: 0 6px 6px 0;
+	padding: 12px 18px;
+}
+
+.site-description {
+	font-size: 3.2rem;
+	color: white;
+	background-color: #ff00dc;
+	clear: both;
+	margin: 15px 0;
+	padding: 0 6px;
+}
+
+body.home {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(http://lorempixel.com/1920/1080/animals);
+	background-color: #555;
+}
+
+a.recent-article,
+a.recent-article:visited {
+	display: inline-block;
+	padding: 2px 6px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.4rem;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+}
+
+a.recent-article img {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 4px;
+	line-height: 1.6em;
+	vertical-align: middle;
+}
+
+.recent-article.daily-news {
+	background-color: white;
+	color: #333;
+}
+
+.term-list {
+	margin: 0 0 12px 0;
+	padding: 0;
+	color: white;
+	border: 1px 1px 0 1px dotted white;
+	text-shadow: 0 1px 1px #000;
+}
+
+.term-list li {
+	list-style: none;
+	padding: 12px 6px;
+	border: 1px dotted white;
+}
+
+.term-list a {
+	color: white;
+	display: block;
+}
+
+h1.section-title {
+	color: #333;
+	padding: 6px;
+	font-size: 1.3rem;
+	background: #f6ff00;
+	background: linear-gradient(90deg, #f6ff00 0%, rgba(246, 255, 0, 0) 80%);
 }

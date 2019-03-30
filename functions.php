@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'cw_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cw_scripts() {
-	wp_enqueue_style( 'cw-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'cw-style', get_stylesheet_uri(), array(), random_int(1000, 5000) );
 
 	wp_enqueue_script( 'cw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -151,6 +151,10 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/* Custom content functions */
+
+require get_template_directory() . '/content-functions/home-content-functions.php';
 
 /**
  * Load Jetpack compatibility file.

@@ -1,11 +1,6 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * Home Template File
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -15,41 +10,92 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area home-section">
 		<main id="main" class="site-main">
+			
+			<div class="row featured-sections">
+				<div class="col-sm">
+					<h1 class="section-title">Focuses</h1>
+					<?php echo home_term_list('focuses');?>
+				</div>
+				<div class="col-sm">
+					<h1 class="section-title">Themes</h1>
+					<?php echo home_term_list('themes');?>
+				</div>
+				<div class="col-sm">
+					<h1 class="section-title">Languages</h1>
+					<?php echo home_term_list('languages');?>
+				</div>
+			</div>
+			
+			<section class="home-recent">
+				<div class="row row-title">
+					<div class="col-sm">
+						<h1 class="section-title">Recent</h1>
+					</div>
+				</div>
+				
+				<div class="row row-content">
+					<div class="col-sm">
+						<?php 
+							$args = array(
+								'post_type' => 'any',
+								'numberposts' => 6,
+								'post_status' => 'publish'
+							);
+							$recents = get_posts($args);
+							foreach($recents as $recent) {
+								$thumbimg = get_post_thumbnail_id( $recent->ID );
+								$thumbsrc = wp_get_attachment_image_src( $thumbimg, 'thumbnail' );
+								$cats = get_the_category($recent->ID);
+								$catstring = array();
+								foreach($cats as $cat) {
+									$catstring[] = $cat->slug;
+								}
+								?>
+									
+									<a href="<?php echo get_permalink($recent->ID);?>" class="recent-article <?php echo implode($catstring, ' ');?>"><img src="<?php echo $thumbsrc[0];?>" alt="<?php echo $recent->post_title;?>"><?php echo $recent->post_title;?></a>
 
-		<?php
-		if ( have_posts() ) :
+								<?php
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+							}
+						?>
+					</div>
+				</div>
+			</section>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			<section class="home-explore">
+			<div class="row row-title">
+				<div class="col-sm">
+					<h1 class="section-title">Explore</h1>
+				</div>
+			</div>
+			<div class="row row-content">
+				<?php 
+						$args = array(
+							'numberposts' => 5,
+							'post_type' => 'comics',
+							'post_status' => 'publish'
+						);
+						$comics = get_posts($args);
+						if($comics) {
+							foreach($comics as $comic) {
+								$imgid = get_post_thumbnail_id( $comic->ID );
+								$imgsrc = wp_get_attachment_image_src( $imgid, 'medium' ); 
+								?>
+									
+									<div class="col-sm explore-article">
+										<a href="<?php echo get_permalink($comic->ID);?>">
+											<img src="<?php echo $imgsrc[0];?>" alt="<?php echo $comic->post_title;?>">
+										</a>
+									</div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+								<?php
+							}
+						}
+					?>
+			</div>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

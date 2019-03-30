@@ -26,7 +26,9 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<img class="site-logo" src="<?php bloginfo('template_url');?>/img/cw_logo_white_small.png" alt="<?php bloginfo('name');?>">
+			<a href="<?php bloginfo('url');?>">
+				<img class="site-logo" src="<?php bloginfo('template_url');?>/img/cw_logo_white_small.png" alt="<?php bloginfo('name');?>">
+			</a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

@@ -15,8 +15,8 @@ get_header();
 			
 			<div class="row featured-sections">
 				<div class="col-sm">
-					<h1 class="section-title">Focuses</h1>
-					<?php echo home_term_list('focuses');?>
+					<h1 class="section-title">Topics</h1>
+					<?php echo home_term_list('topics');?>
 				</div>
 				<div class="col-sm">
 					<h1 class="section-title">Themes</h1>

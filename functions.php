@@ -40,7 +40,7 @@ if ( ! function_exists( 'cw_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-thumbnails', array('post', 'comics', 'page') );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

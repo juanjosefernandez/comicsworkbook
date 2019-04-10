@@ -40,13 +40,12 @@ if ( ! function_exists( 'cw_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails', array('post', 'comics', 'page') );
+		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'cw' ),
 		) );
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -155,6 +154,10 @@ require get_template_directory() . '/inc/customizer.php';
 /* Custom content functions */
 
 require get_template_directory() . '/content-functions/home-content-functions.php';
+
+/* Custom post types and taxonomies */
+
+require get_template_directory() . '/inc/custom-content.php';
 
 /**
  * Load Jetpack compatibility file.

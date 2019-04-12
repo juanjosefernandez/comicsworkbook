@@ -1,0 +1,24 @@
+110419
+
++- Can you change the first menu item's colors to invert it to be white on pink? This way it stands out in contrast to the other menu items.
+
++- For the Taxonomies that will be on the front page I just need “Topics” and “Themes”. On the front page I just need those two to show up. Can you fix that?
+
+- I would like the contributors' page to be a table of all the entries of the Contributors Post type as a table that lists out all contributors alphabetically. I’ve created 5 so you can test it.
+
++- Remove the logo from the header. The highest thing on the page should be the General Menu.
+
++- Can you implement the sidebar widget inside all pages? At the moment anything that is put in the sidebar appears at the bottom beneath post content.
+
+- I would like to use this sidebar as an internal navigation.
+
++- I would like to reduce the fonts on the site down about 8 points. For example: the paragraph text size is 22 point and I would like it to be 16 point. 
+
+-  Can you make the color of text on a link that has already been visited pink?
+
+-  Can you prevent the “preview” image in a post from appearing at the top of posts?
+
+-  Can you create a page for “Comics” that is a grid of the recent “Comics” posts? 
+
+-  At the bottom of posts I want pink blocks that list: Previous, Next, Random.
+

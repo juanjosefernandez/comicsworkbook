@@ -22,10 +22,6 @@ get_header();
 					<h1 class="section-title">Themes</h1>
 					<?php echo home_term_list('themes');?>
 				</div>
-				<div class="col-sm">
-					<h1 class="section-title">Series</h1>
-					<?php echo home_term_list('series');?>
-				</div>
 			</div>
 			
 			<section class="home-recent">

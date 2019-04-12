@@ -9977,9 +9977,18 @@ a.text-dark:hover, a.text-dark:focus {
 	margin-bottom: 16px;
 }
 
+.main-navigation {
+	margin-top: 24px;
+}
+
+.main-navigation ul#primary-menu > li > a {
+	background-color: #ff00dc;
+	color: white;
+}
+
 .main-navigation li a {
 	display: inline-block;
-	color: #FF00DC;
+	color: #ff00dc;
 	background-color: white;
 	margin: 0 6px 6px 0;
 	padding: 12px 18px;
@@ -9998,7 +10007,7 @@ body.home {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url(http://lorempixel.com/1920/1080/animals);
-	background-color: #555;
+	background-color: white;
 }
 
 a.recent-article,
@@ -10054,6 +10063,12 @@ h1.section-title {
 }
 
 .entry-content {
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.entry-footer span.cat-links,
+.entry-footer span.tag-links,
+.entry-footer span.edit-link {
+	display: block;
 }

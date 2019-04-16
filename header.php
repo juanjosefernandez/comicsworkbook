@@ -42,11 +42,12 @@
 		</nav><!-- #site-navigation -->
 
 		<?php
+		if(is_home()):
 			$cw_description = get_bloginfo( 'description', 'display' );
 			if ( $cw_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $cw_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			<?php endif; endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

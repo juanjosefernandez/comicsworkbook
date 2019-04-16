@@ -35,3 +35,14 @@ function cw_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'cw_pingback_header' );
+
+
+function cw_replace_image_in_dev( $attachment_id, $size = 'thumbnail', $icon = false) {
+
+	return array('http://lorempixel.com/400/200/', 400, 200);
+
+}
+
+if(WP_ENV == 'dev') {
+	add_filter('wp_get_attachment_image_src', 'cw_replace_image_in_dev', 3, 10);	
+}

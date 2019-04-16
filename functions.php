@@ -159,6 +159,10 @@ require get_template_directory() . '/content-functions/home-content-functions.ph
 
 require get_template_directory() . '/inc/custom-content.php';
 
+/* Custom fields */
+
+require get_template_directory() . '/inc/custom-fields.php';
+
 /**
  * Load Jetpack compatibility file.
  */

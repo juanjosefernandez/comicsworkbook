@@ -21,15 +21,23 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site container-fluid">
+<div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cw' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<!-- <div class="site-branding">
-			<a href="<?php bloginfo('url');?>">
+		 <?php if(is_home()):?>
+		 <div class="site-branding row">
+			<a href="<?php bloginfo('url');?>" class="col-md-2">
 				<img class="site-logo" src="<?php bloginfo('template_url');?>/img/cw_logo_white_small.png" alt="<?php bloginfo('name');?>">
 			</a>
-		</div> --><!-- .site-branding -->
+			<div class="col-md-10">
+				<h1 class="site-title"><?php bloginfo('name');?></h1>
+				<p class="site-description"><?php 
+				$cw_description = get_bloginfo( 'description', 'display' );
+				echo $cw_description; /* WPCS: xss ok. */ ?></p>
+			</div>
+		</div>
+	<?php endif;?>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cw' ); ?></button>
@@ -43,11 +51,13 @@
 
 		<?php
 		if(is_home()):
-			$cw_description = get_bloginfo( 'description', 'display' );
+			
 			if ( $cw_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $cw_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; endif; ?>
+				
+			<?php endif; else:
+
+			 endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -34,4 +34,21 @@
 	}
 }
 
+.aside-site-desc {
+	background-color: $brand_yellow;
+	text-align: center;
+	img.site-logo {
+		margin: 12px 0 0 12px;
+	}
+
+	h1.site-title {
+		margin-top: 0;
+	}
+
+	p.site-description {
+		font-size: 16px;
+		padding: 6px;
+	}
+}
+
 //@import "no-sidebar";

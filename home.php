@@ -82,7 +82,7 @@ get_header();
 									
 									<div class="col-sm explore-article">
 										<a href="<?php echo get_permalink($comic->ID);?>">
-											<img src="<?php echo $imgsrc[0];?>" alt="<?php echo $comic->post_title;?>">
+											<img title="<?php echo $comic->post_title;?>" src="<?php echo $imgsrc[0];?>" alt="<?php echo $comic->post_title;?>">
 										</a>
 									</div>
 

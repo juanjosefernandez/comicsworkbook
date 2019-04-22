@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"contributo",
+				"contributors_array"
+			],
+			[
 				"toolset",
 				"toolsetWrap"
 			],
@@ -427,6 +431,67 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "home.php",
+			"settings":
+			{
+				"buffer_size": 2536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/custom-content.php",
+			"settings":
+			{
+				"buffer_size": 6450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/custom-fields.php",
+			"settings":
+			{
+				"buffer_size": 1966,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template-parts/content-none.php",
+			"settings":
+			{
+				"buffer_size": 1239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template-parts/content-reviews.php",
+			"settings":
+			{
+				"buffer_size": 1239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template-parts/content-contributors.php",
+			"settings":
+			{
+				"buffer_size": 1239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template-parts/content-comics.php",
+			"settings":
+			{
+				"buffer_size": 1239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -440,6 +505,14 @@
 		"selected_items":
 		[
 			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
 				"wrap",
 				"Emmet: Wrap With Abbreviation"
 			],
@@ -452,20 +525,12 @@
 				"Package Control: Install Package"
 			],
 			[
-				"comm",
-				"Toggle Comment"
-			],
-			[
 				"save proj",
 				"Project: Save As"
 			],
 			[
 				"prett",
 				"Preferences: JsPrettier Settings - Default"
-			],
-			[
-				"ren",
-				"Rename File"
 			],
 			[
 				"instal",
@@ -629,24 +694,31 @@
 	"expanded_folders":
 	[
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/layout",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/variables-site"
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts"
 	],
 	"file_history":
 	[
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sidebar.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/package.json",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/style.scss",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/layout/_sidebar-content.scss",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/home.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/template-functions.php",
+		"/home/donhilo/Code/php/cw/public/wp-config.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/custom-fields.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/single.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site/_site.scss",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/template-tags.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/header.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sidebar.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/layout/_content-sidebar.scss",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/functions.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/layouts/sidebar-content.css",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/archive.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/page.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/home.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/debug.log",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/content-functions/home-content-functions.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/functions.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/header.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site/_home.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements/_header.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/variables-site/_colors.scss",
@@ -754,17 +826,7 @@
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Event.js",
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/config.json",
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ExpositorMini.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Header.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuRedes.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Galeria.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/ColaboradoresWidget.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/EventMini.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Expositor.js",
-		"/home/donhilo/Documentos/code/php/cchl/public/algolia_importer/importer.php",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/menuItems.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/MenuTop.js",
-		"/home/donhilo/Escritorio/backup_jornadas.html",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Jornadas.js"
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Header.js"
 	],
 	"find":
 	{
@@ -775,6 +837,9 @@
 		"height": 176.0,
 		"where_history":
 		[
+			"*.php",
+			"*.scss",
+			"*.php",
 			"*.scss"
 		]
 	},
@@ -783,6 +848,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Contributor",
+			"function cw_posted_by",
+			"sidebar-content",
+			"site",
+			"sidebar-content",
+			"sidebar",
+			"entry_footer",
 			"entry-content"
 		],
 		"highlight": true,
@@ -801,8 +873,212 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								695,
+								695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 123.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "inc/custom-content.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2609,
+								2609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "inc/custom-fields.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								744,
+								744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "template-parts/content-none.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1239,
+								1239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "template-parts/content-reviews.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1239,
+								1239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "template-parts/content-contributors.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1239,
+								1239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "template-parts/content-comics.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 337.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -855,12 +1131,60 @@
 		"selected_items":
 		[
 			[
-				"singl",
-				"sass/elements/_single.scss"
+				"custom",
+				"inc/custom-content.php"
+			],
+			[
+				"hom",
+				"home.php"
+			],
+			[
+				"sideb",
+				"sidebar.php"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"templa",
+				"inc/template-tags.php"
+			],
+			[
+				"conte",
+				"template-parts/content.php"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"tyel",
+				"sass/style.scss"
+			],
+			[
+				"content-side",
+				"sass/layout/_content-sidebar.scss"
+			],
+			[
+				"site",
+				"sass/site/_site.scss"
+			],
+			[
+				"site.sc",
+				"sass/site/_site.scss"
+			],
+			[
+				"sideba",
+				"sass/layout/_sidebar-content.scss"
 			],
 			[
 				"content",
 				"template-parts/content.php"
+			],
+			[
+				"singl",
+				"single.php"
 			],
 			[
 				"todo",
@@ -875,16 +1199,8 @@
 				"page.php"
 			],
 			[
-				"sideb",
-				"sidebar.php"
-			],
-			[
 				"sin",
 				"single.php"
-			],
-			[
-				"head",
-				"header.php"
 			],
 			[
 				"tod",
@@ -905,10 +1221,6 @@
 			[
 				"single",
 				"sass/elements/_single.scss"
-			],
-			[
-				"hom",
-				"home.php"
 			],
 			[
 				"audi",
@@ -1159,10 +1471,6 @@
 				"filsa2018-frontend/src/components/Programa.js"
 			],
 			[
-				"packa",
-				"filsa2018-frontend/package.json"
-			],
-			[
 				"exposi",
 				"filsa2018-frontend/src/components/Expositor.js"
 			],
@@ -1333,38 +1641,6 @@
 			[
 				"socialho",
 				"filsa2018-frontend/src/components/SocialHome.js"
-			],
-			[
-				"carou",
-				"filsa2018-frontend/src/components/Carousel.js"
-			],
-			[
-				"colaborad",
-				"filsa2018-frontend/src/components/ColaboradoresWidget.js"
-			],
-			[
-				"car",
-				"filsa2018-frontend/src/components/Carousel.js"
-			],
-			[
-				"carous",
-				"filsa2018-frontend/src/components/Carousel.js"
-			],
-			[
-				"in",
-				"filsa2018-frontend/public/index.html"
-			],
-			[
-				"events",
-				"filsa2018-frontend/src/components/EventSingle.js"
-			],
-			[
-				"pro",
-				"filsa2018-frontend/src/components/Programa.js"
-			],
-			[
-				"colab",
-				"filsa2018-frontend/src/components/Colaboradores.js"
 			]
 		],
 		"width": 0.0

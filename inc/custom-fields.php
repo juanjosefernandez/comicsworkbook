@@ -115,3 +115,24 @@ function cw_contributors_add_metabox() {
 	) );
 
 }
+
+add_action( 'cmb2_init', 'cw_comic_pages_add_metabox' );
+function cw_comic_pages_add_metabox() {
+
+	$prefix = '_cw_';
+
+	$cmb = new_cmb2_box( array(
+		'id'           => $prefix . 'comic_pages',
+		'title'        => __( 'Comic pages', 'cw' ),
+		'object_types' => array( 'comics' ),
+		'context'      => 'normal',
+		'priority'     => 'high',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Comic pages', 'cw' ),
+		'id' => $prefix . 'pages',
+		'type' => 'file_list',
+	) );
+
+}

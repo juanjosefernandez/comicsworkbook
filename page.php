@@ -16,6 +16,9 @@ get_header();
 ?>
 
 <div class="row">
+	<?php
+get_sidebar();
+?>
 	<div class="col col-md-9">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -37,9 +40,6 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
-<?php
-get_sidebar();
-?>
 </div>
 <?php
 get_footer();

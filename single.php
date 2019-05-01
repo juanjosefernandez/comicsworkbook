@@ -8,14 +8,23 @@
  */
 
 get_header();
+if(get_post_type( ) != 'comics'):
+	$iscomic = false;
+	$cols = 'col-md-9';
+else:
+	$iscomic = true;
+	$cols = 'col-md-12';
+endif;
 ?>
 <div class="row">
 
 	<?php
-	get_sidebar();
+	if(!$iscomic):
+		get_sidebar();
+	endif;
 	?>
 	
-	<div class="col col-md-9">
+	<div class="col <?php echo $cols;?>">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
 

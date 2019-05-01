@@ -10,3 +10,52 @@
 		display: block;
 	}
 }
+
+.review-metadata {
+	padding: 12px;
+	border: 1px dashed #333;
+	margin-bottom: 12px;
+
+	.label {
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.comics-template-default h1.entry-title {
+	text-align: center;
+}
+
+.comics-content {
+	text-align: center;
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.comics-toolbar {
+	padding: 6px;
+	text-align: center;
+}
+
+.comics-navigator {
+	position: relative;
+	.next,
+	.prev {
+		position: absolute;
+		top: 20%;
+		font-size: 36px;
+	}
+
+	.next {
+		right: 0;
+	}
+
+	.prev {
+		left: 0;
+	}
+}

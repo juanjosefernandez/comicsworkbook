@@ -27,6 +27,37 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
+		<div class="review-metadata row">
+			<div class="col-md-3">
+				<?php the_post_thumbnail( 'medium' );?>
+			</div>
+			<div class="col-md-9">
+			<?php if(get_post_meta( $post->ID, '_cw_title', true )):?>
+				<p class="custom-field title"><span class="label">Title:</span> <?php echo get_post_meta($post->ID, '_cw_title', true);?></p>
+			<?php endif;?>
+
+			<?php if(get_post_meta( $post->ID, '_cw_author', true )):?>
+				<p class="custom-field author"><span class="label">Author:</span> <?php echo get_post_meta($post->ID, '_cw_author', true);?></p>
+			<?php endif;?>
+			
+			<?php if(get_post_meta( $post->ID, '_cw_publisher', true )):?>
+				<p class="custom-field publisher"><span class="label">Publisher:</span> <?php echo get_post_meta($post->ID, '_cw_publisher', true);?></p>
+			<?php endif;?>
+
+			<?php if(get_post_meta( $post->ID, '_cw_pagecount', true )):?>
+				<p class="custom-field pagecount"><span class="label">Page Count:</span> <?php echo get_post_meta($post->ID, '_cw_pagecount', true);?></p>
+			<?php endif;?>
+
+			<?php if(get_post_meta( $post->ID, '_cw_cost', true )):?>
+				<p class="custom-field cost"><span class="label">Cost:</span> <?php echo get_post_meta($post->ID, '_cw_cost', true);?></p>
+			<?php endif;?>
+
+			<?php if(get_post_meta( $post->ID, '_cw_buyplace', true )):?>
+				<p class="custom-field buyplace"><span class="label">Where to buy:</span> <?php echo get_post_meta($post->ID, '_cw_buyplace', true);?></p>
+			<?php endif;?>
+			</div>
+		</div>
 	</header><!-- .entry-header -->
 
 	<?php //cw_post_thumbnail(); ?>

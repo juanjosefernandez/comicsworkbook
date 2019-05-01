@@ -131,6 +131,7 @@ function cw_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cw_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */

@@ -19,8 +19,15 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<?php 
+	$home_options = get_homepage_options();
+	$home_style = '	background-image: url(' . $home_options['bg_img'] .');
+					background-repeat: no-repeat; 
+					background-size: contain; 
+					background-position: center;
+					background-color: '. $home_options['bg_color'] .';'; 
+?>
+<body <?php body_class(); ?> <?php if(is_home()): echo 'style="' . $home_style . '"'; endif;?> >
 	<header id="masthead" class="site-header">
 	<div class="container header-container">
 			<?php if(is_home() || is_singular('comics')):

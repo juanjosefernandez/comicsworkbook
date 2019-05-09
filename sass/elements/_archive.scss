@@ -1,9 +1,28 @@
-.archive-item-post {
+.archive-item-post,
+.archive-item-contributor {
 	padding: 12px;
 	border: 1px dashed #333;
 	margin: 12px 0 12px 0;
+	display: flex;
 
 	h2.entry-title {
 		font-size: 18px;
+	}
+
+	img {
+		width: 60px;
+		height: 60px;
+		margin-right: 6px;
+	}
+}
+
+.post-type-archive-contributors {
+	.archive-item-contributor {
+		margin: 0;
+		border-bottom: 0;
+	}
+
+	.table-contributors {
+		border-bottom: 1px dashed #333;
 	}
 }

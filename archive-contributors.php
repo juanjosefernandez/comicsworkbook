@@ -26,7 +26,7 @@ get_header();
 					the_archive_description( '<div class="archive-description">', '</div>' );
 					?>
 				</header><!-- .page-header -->
-		
+				<div class="table-contributors">
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :
@@ -40,12 +40,14 @@ get_header();
 					get_template_part( 'template-parts/content-archive', get_post_type() );
 		
 				endwhile;
+
+				?>
+
+				</div>
+
+				<?php
 		
-				echo cw_get_the_posts_navigation(
-						array(
-							'prev_text' => 'Previous',
-							'next_text' => 'Next'
-							));
+				the_posts_navigation();
 		
 			else :
 		

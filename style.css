@@ -863,7 +863,7 @@ a:hover, a:active {
 }
 
 .aside-site-desc {
-	background-color: #e8fe00;
+	background-color: white;
 	text-align: center;
 }
 
@@ -873,6 +873,7 @@ a:hover, a:active {
 
 .aside-site-desc h1.site-title {
 	margin-top: 0;
+	background-color: white;
 }
 
 .aside-site-desc p.site-description {
@@ -10197,12 +10198,42 @@ h1.section-title {
 	left: 0;
 }
 
-.archive-item-post {
+.nav-links {
+	display: flex;
+}
+
+.nav-links a {
+	display: inline-block;
+	background-color: #ff00dc;
+	color: white;
+	padding: 6px;
+}
+
+.archive-item-post,
+.archive-item-contributor {
 	padding: 12px;
 	border: 1px dashed #333;
 	margin: 12px 0 12px 0;
+	display: flex;
 }
 
-.archive-item-post h2.entry-title {
+.archive-item-post h2.entry-title,
+.archive-item-contributor h2.entry-title {
 	font-size: 18px;
+}
+
+.archive-item-post img,
+.archive-item-contributor img {
+	width: 60px;
+	height: 60px;
+	margin-right: 6px;
+}
+
+.post-type-archive-contributors .archive-item-contributor {
+	margin: 0;
+	border-bottom: 0;
+}
+
+.post-type-archive-contributors .table-contributors {
+	border-bottom: 1px dashed #333;
 }

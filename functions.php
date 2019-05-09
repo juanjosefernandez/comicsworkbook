@@ -164,6 +164,10 @@ require get_template_directory() . '/inc/custom-content.php';
 
 require get_template_directory() . '/inc/custom-fields.php';
 
+/* Site options */
+
+require get_template_directory() . '/inc/admin-options.php';
+
 /**
  * Load Jetpack compatibility file.
  */

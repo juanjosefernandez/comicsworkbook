@@ -23,3 +23,9 @@ function home_term_list($taxonomy) {
 		return $output;
 	}
 }
+
+function get_homepage_options() {
+	$options = get_option('cw_main_options');
+
+	return $options;
+}

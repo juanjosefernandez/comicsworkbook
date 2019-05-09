@@ -59,3 +59,14 @@
 		left: 0;
 	}
 }
+
+.nav-links {
+	display: flex;
+}
+
+.nav-links a {
+	display: inline-block;
+	background-color: $brand_pink;
+	color: white;
+	padding: 6px;
+}

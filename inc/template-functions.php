@@ -44,5 +44,67 @@ function cw_replace_image_in_dev( $attachment_id, $size = 'thumbnail', $icon = f
 }
 
 if(WP_ENV == 'dev') {
-	add_filter('wp_get_attachment_image_src', 'cw_replace_image_in_dev', 3, 10);	
+	//add_filter('wp_get_attachment_image_src', 'cw_replace_image_in_dev', 3, 10);	
+}
+
+add_action('pre_get_posts', 'alter_query_contributors');
+
+function alter_query_contributors($query) {
+	global $wp_query;
+
+	if(is_post_type_archive( 'contributors' )) {
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
+		remove_all_actions( '__after_loop' );
+	} else {
+		return;
+	}
+}
+
+function cw_get_the_posts_navigation( $args = array() ) {
+    $navigation = '';
+ 
+    // Don't print empty markup if there's only one page.
+    if ( $GLOBALS['wp_query']->max_num_pages > 1 ) {
+        $args = wp_parse_args(
+            $args,
+            array(
+                'prev_text'          => __( 'Older posts' ),
+                'next_text'          => __( 'Newer posts' ),
+                'screen_reader_text' => __( 'Posts navigation' ),
+            )
+        );
+
+        $randargs = array(
+        				'post_type' => 'any',
+        				'numberposts' => 1,
+        				'orderby' => 'rand'
+        			);
+ 
+        $next_link = get_previous_posts_link( $args['next_text'] );
+        $prev_link = get_next_posts_link( $args['prev_text'] );
+ 		$random = get_posts($randargs);
+
+ 		if($random) {
+ 			foreach($random as $rand) {
+ 				$rand_link = '<a href="' . get_permalink($rand->ID) . '">Random</a>';
+ 			}
+ 		}
+
+        if ( $prev_link ) {
+            $navigation .= '<div class="nav-previous">' . $prev_link . '</div>';
+        }
+
+        if ($rand_link) {
+        	$navigation .= '<div class="nav-random">' . $rand_link . '</div>';
+        }
+ 
+        if ( $next_link ) {
+            $navigation .= '<div class="nav-next">' . $next_link . '</div>';
+        }
+ 
+        $navigation = _navigation_markup( $navigation, 'posts-navigation', $args['screen_reader_text'] );
+    }
+ 
+    return $navigation;
 }

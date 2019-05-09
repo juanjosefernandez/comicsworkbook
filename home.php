@@ -50,7 +50,11 @@ get_header();
 								}
 								?>
 									
-									<a href="<?php echo get_permalink($recent->ID);?>" class="recent-article <?php echo implode($catstring, ' ');?>"><img src="<?php echo $thumbsrc[0];?>" alt="<?php echo $recent->post_title;?>"><?php echo $recent->post_title;?></a>
+									<a href="<?php echo get_permalink($recent->ID);?>" class="recent-article <?php echo implode($catstring, ' ');?>">
+										<?php if(has_post_thumbnail( $recent->ID )):?>
+											<img src="<?php echo $thumbsrc[0];?>" alt="<?php echo $recent->post_title;?>">
+										<?php endif;?>
+											<?php echo $recent->post_title;?></a>
 
 								<?php
 

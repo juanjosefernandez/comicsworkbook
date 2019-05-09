@@ -1035,6 +1035,10 @@ html {
 	min-height: 100%;
 }
 
+a:visited {
+	color: #ff00dc;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10090,9 +10094,10 @@ a.recent-article:visited {
 	padding: 2px 6px;
 	color: white;
 	text-decoration: none;
-	font-size: 1.4rem;
-	line-height: 1.6em;
+	font-size: 1rem;
+	line-height: 1.2em;
 	margin-bottom: 12px;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 a.recent-article img {
@@ -10102,11 +10107,6 @@ a.recent-article img {
 	margin-right: 4px;
 	line-height: 1.6em;
 	vertical-align: middle;
-}
-
-a.recent-article.daily-news {
-	background-color: white;
-	color: #333;
 }
 
 .term-list {

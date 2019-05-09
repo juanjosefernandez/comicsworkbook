@@ -111,6 +111,10 @@ html {
 	min-height: 100%;
 }
 
+a:visited {
+	color: $brand_pink;
+}
+
 @import "cw_bootstrap";
 
 @import "elements/header";

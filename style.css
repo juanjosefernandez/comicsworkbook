@@ -10209,6 +10209,11 @@ h1.section-title {
 	padding: 6px;
 }
 
+.nav-links span.page-numbers.current {
+	display: inline-block;
+	padding: 6px;
+}
+
 .archive-item-post,
 .archive-item-contributor {
 	padding: 12px;

@@ -10,9 +10,13 @@
 get_header();
 ?>
 
+<div class="row">
+	<?php get_sidebar();?>
+
+<div class="col col-md-9">
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+		
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -38,7 +42,7 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_pagination();
 
 		else :
 
@@ -49,7 +53,7 @@ get_header();
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
-
+	</div>
+</div>
 <?php
-get_sidebar();
 get_footer();

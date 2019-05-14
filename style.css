@@ -10119,13 +10119,22 @@ a.recent-article img {
 
 .term-list li {
 	list-style: none;
-	padding: 12px 6px;
-	border: 1px dotted white;
+}
+
+.term-list li.hidden {
+	display: none;
 }
 
 .term-list a {
 	color: white;
 	display: block;
+	padding: 12px 6px;
+	border: 1px dotted white;
+}
+
+.term-list a:hover, .term-list a.toggled {
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 h1.section-title {
@@ -10200,6 +10209,7 @@ h1.section-title {
 
 .nav-links {
 	display: flex;
+	margin-top: 24px;
 }
 
 .nav-links a {
@@ -10241,4 +10251,33 @@ h1.section-title {
 
 .post-type-archive-contributors .table-contributors {
 	border-bottom: 1px dashed #333;
+}
+
+.comic-item-grid {
+	text-align: center;
+}
+
+.comic-item-grid a {
+	background-repeat: none;
+	background-size: cover;
+	display: block;
+	height: 260px;
+	position: relative;
+}
+
+.comic-item-grid a h1 {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 12px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	background-color: #ff00dc;
+	width: 100%;
+	transition: all ease-in 0.2s;
+}
+
+.comic-item-grid a:hover h1 {
+	padding-bottom: 48px;
 }

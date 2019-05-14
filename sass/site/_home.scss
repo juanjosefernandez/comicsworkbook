@@ -35,12 +35,20 @@ a.recent-article img {
 
 	li {
 		list-style: none;
-		padding: 12px 6px;
-		border: 1px dotted white;
+		&.hidden {
+			display: none;
+		}
 	}
 
 	a {
 		color: white;
 		display: block;
+		padding: 12px 6px;
+		border: 1px dotted white;
+		&:hover,
+		&.toggled {
+			text-decoration: none;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
 	}
 }

@@ -10266,7 +10266,7 @@ h1.section-title {
 	margin-bottom: 12px;
 }
 
-.comic-item-grid a h1 {
+.comic-item-grid a .comics-info {
 	position: absolute;
 	bottom: 0;
 	margin: 0;
@@ -10279,6 +10279,15 @@ h1.section-title {
 	transition: all ease-in 0.2s;
 }
 
-.comic-item-grid a:hover h1 {
+.comic-item-grid a .comics-info h1 {
+	font-size: 14px;
+}
+
+.comic-item-grid a .comics-info p {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.comic-item-grid a:hover .comics-info {
 	padding-bottom: 48px;
 }

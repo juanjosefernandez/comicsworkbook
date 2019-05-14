@@ -61,6 +61,20 @@ function alter_query_contributors($query) {
 	}
 }
 
+add_action('pre_get_posts', 'alter_query_comics');
+
+function alter_query_comics($query) {
+    global $wp_query;
+
+    if(is_post_type_archive(  'comics' )) {
+        $query->set('posts_per_page', 12);
+        remove_all_actions( '__after_loop');
+    } else {
+        return;
+    }
+}
+
+
 function cw_get_the_posts_navigation( $args = array() ) {
     $navigation = '';
  
@@ -107,4 +121,19 @@ function cw_get_the_posts_navigation( $args = array() ) {
     }
  
     return $navigation;
+}
+
+function cw_clean_tags($postid, $taxonomy, $prefix, $separator) {
+    $terms = get_the_terms( $postid, $taxonomy );
+    $termnames = [];
+    if($terms) {
+        foreach($terms as $term) {
+            $termnames[] = $term->name; 
+        }
+    }
+    //var_dump($termnames);
+    if($termnames) {
+        $output = $prefix . ' ' . implode($separator, $termnames);
+        return $output;
+    }
 }

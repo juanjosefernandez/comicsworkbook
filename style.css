@@ -10263,6 +10263,7 @@ h1.section-title {
 	display: block;
 	height: 260px;
 	position: relative;
+	margin-bottom: 12px;
 }
 
 .comic-item-grid a h1 {

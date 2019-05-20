@@ -83,12 +83,15 @@ get_header();
 								$imgid = get_post_thumbnail_id( $comic->ID );
 								$imgsrc = wp_get_attachment_image_src( $imgid, 'medium' ); 
 								?>
-									
-									<div class="col-sm explore-article">
-										<a href="<?php echo get_permalink($comic->ID);?>">
-											<img title="<?php echo $comic->post_title;?>" src="<?php echo $imgsrc[0];?>" alt="<?php echo $comic->post_title;?>">
+									<article class="comic-item-grid col-md-3">
+										<a style="background-image:url(<?php echo $imgsrc[0];?>);" href="<?php echo get_permalink($comic->ID);?>">
+											<div class="comics-info">
+												<h1><?php echo $comic->post_title;?></h1>
+												<p><?php echo cw_clean_tags($comic->ID, 'creator', 'by ', ', ');?></p>
+												<p><?php echo cw_clean_tags($comic->ID, 'series', 'Series: ', ', ');?></p>
+											</div>
 										</a>
-									</div>
+									</article>
 
 								<?php
 							}

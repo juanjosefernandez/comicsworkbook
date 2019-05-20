@@ -31,7 +31,7 @@
 	<header id="masthead" class="site-header">
 	<div class="container header-container">
 			<?php if(is_home() || is_singular('comics')):
-				$logo = (is_home())? 'cw_logo_white_small.png' : 'cw_logo_black_small.png';
+				$logo = (is_home())? 'cw_logo_black_small.png' : 'cw_logo_black_small.png';
 			?>
 				<div class="site-branding row">
 					<a href="<?php bloginfo('url');?>" class="col-md-2">

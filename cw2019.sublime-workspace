@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get_templat",
+				"get_template_directory_uri"
+			],
+			[
 				"has_post",
 				"has_post_thumbnail"
 			],
@@ -439,6 +443,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "sass/variables-site/_bootstrap-variables.scss",
+			"settings":
+			{
+				"buffer_size": 47780,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "languages/readme.txt",
+			"settings":
+			{
+				"buffer_size": 322,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/admin-options.php",
+			"settings":
+			{
+				"buffer_size": 3707,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -452,12 +480,16 @@
 		"selected_items":
 		[
 			[
-				"rein",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"ren",
 				"Rename File"
+			],
+			[
+				"syntaxjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"comm",
@@ -643,25 +675,28 @@
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/img",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/js",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/languages",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/variables-site",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts"
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/variables-site"
 	],
 	"file_history":
 	[
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site/_home.scss",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/header.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/template-functions.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/archive-comics.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content-comic-item-grid.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/custom-content.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements/_single.scss",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/archive.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/home.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/content-functions/home-content-functions.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/functions.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/admin-options.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/template-functions.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/custom-content.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/js/cw-ui.js",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site/_home.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements/_archive.scss",
+		"/home/donhilo/Code/php/cw/public/wp-config.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/header.php",
+		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/admin-options.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/archive-contributors.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/archive.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/index.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/single.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content-archive-post.php",
@@ -673,7 +708,6 @@
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/search.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content-search.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/inc/template-tags.php",
-		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/elements/_single.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/style.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/variables-site/_colors.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/page.php",
@@ -687,7 +721,6 @@
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content-contributors.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/template-parts/content-comics.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/package.json",
-		"/home/donhilo/Code/php/cw/public/wp-config.php",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/site/_site.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/sass/layout/_content-sidebar.scss",
 		"/home/donhilo/Code/php/cw/public/wp-content/themes/cw/layouts/sidebar-content.css",
@@ -775,10 +808,7 @@
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/Aviso.js",
 		"/home/donhilo/Escritorio/migracion_chileactua",
 		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/react-instagram-embed/es/index.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/VisitasGuiadas.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/FirmaAutores.js",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/public/index.html",
-		"/home/donhilo/Documentos/code/js/filsa2018-frontend/node_modules/react-instagram-embed/lib/index.js"
+		"/home/donhilo/Documentos/code/js/filsa2018-frontend/src/components/VisitasGuiadas.js"
 	],
 	"find":
 	{
@@ -789,6 +819,7 @@
 		"height": 176.0,
 		"where_history":
 		[
+			"*.scss",
 			"*.php",
 			"*.scss",
 			"*.php",
@@ -802,6 +833,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nav-links",
 			"thumbnail",
 			"the_posts_navigation",
 			"yourprefix",
@@ -842,8 +874,96 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "sass/variables-site/_bootstrap-variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7908,
+								7908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4107.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "languages/readme.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "inc/admin-options.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2267,
+								2267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 753.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -886,7 +1006,7 @@
 	"project": "cw2019.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -896,12 +1016,36 @@
 		"selected_items":
 		[
 			[
-				"todo",
-				"tasks.todo"
+				"admin",
+				"inc/admin-options.php"
 			],
 			[
-				"st",
-				"sass/style.scss"
+				"custom-cont",
+				"inc/custom-content.php"
+			],
+			[
+				"func",
+				"inc/template-functions.php"
+			],
+			[
+				"archi",
+				"sass/elements/_archive.scss"
+			],
+			[
+				"singl",
+				"sass/elements/_single.scss"
+			],
+			[
+				"content-com",
+				"template-parts/content-comic-item-grid.php"
+			],
+			[
+				"comics",
+				"archive-comics.php"
+			],
+			[
+				"cu",
+				"inc/custom-content.php"
 			],
 			[
 				"hom",
@@ -909,15 +1053,19 @@
 			],
 			[
 				"home",
-				"home.php"
+				"content-functions/home-content-functions.php"
 			],
 			[
-				"singl",
-				"sass/elements/_single.scss"
+				"custom",
+				"inc/custom-content.php"
 			],
 			[
-				"archi",
-				"archive.php"
+				"todo",
+				"tasks.todo"
+			],
+			[
+				"st",
+				"sass/style.scss"
 			],
 			[
 				"index",
@@ -956,10 +1104,6 @@
 				"inc/template-functions.php"
 			],
 			[
-				"func",
-				"functions.php"
-			],
-			[
 				"content-arch",
 				"template-parts/content-archive-post.php"
 			],
@@ -982,10 +1126,6 @@
 			[
 				"head",
 				"header.php"
-			],
-			[
-				"content-com",
-				"template-parts/content-comics.php"
 			],
 			[
 				"single",
@@ -1046,10 +1186,6 @@
 			[
 				"custom-fei",
 				"inc/custom-fields.php"
-			],
-			[
-				"custom",
-				"inc/custom-content.php"
 			],
 			[
 				"conte",
@@ -1390,22 +1526,6 @@
 			[
 				"program",
 				"filsa2018-frontend/src/components/Programa.js"
-			],
-			[
-				"regist",
-				"filsa2018-frontend/src/registerServiceWorker.js"
-			],
-			[
-				"busc",
-				"filsa2018-frontend/src/components/BuscaLibrosMini.js"
-			],
-			[
-				"homeve",
-				"filsa2018-frontend/src/components/HomeEventos.js"
-			],
-			[
-				"invit",
-				"filsa2018-frontend/src/components/Invitados.js"
 			]
 		],
 		"width": 0.0
@@ -1418,6 +1538,10 @@
 		[
 			[
 				"",
+				"~/Code/cedetgore.sublime-project"
+			],
+			[
+				"prom",
 				"~/Code/prompt.sublime-project"
 			],
 			[
@@ -1511,7 +1635,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 301.0,
 	"status_bar_visible": true,
 	"template_settings":

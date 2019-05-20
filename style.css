@@ -10031,8 +10031,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .home .site-header {
-	background-color: black;
-	background: linear-gradient(to bottom, black 0%, rgba(209, 209, 209, 0) 100%);
+	background-color: transparent;
 }
 
 .site-logo {
@@ -10092,7 +10091,7 @@ a.recent-article,
 a.recent-article:visited {
 	display: inline-block;
 	padding: 2px 6px;
-	color: white;
+	color: #333;
 	text-decoration: none;
 	font-size: 1rem;
 	line-height: 1.2em;
@@ -10112,9 +10111,8 @@ a.recent-article img {
 .term-list {
 	margin: 0 0 12px 0;
 	padding: 0;
-	color: white;
+	color: #333;
 	border: 1px 1px 0 1px dotted white;
-	text-shadow: 0 1px 1px #000;
 }
 
 .term-list li {
@@ -10126,7 +10124,7 @@ a.recent-article img {
 }
 
 .term-list a {
-	color: white;
+	color: #333;
 	display: block;
 	padding: 12px 6px;
 	border: 1px dotted white;
@@ -10199,6 +10197,19 @@ h1.section-title {
 	font-size: 36px;
 }
 
+.comics-navigator .next a,
+.comics-navigator .prev a {
+	background-color: #ff00dc;
+	color: white;
+	display: block;
+	padding: 4px 8px 0 8px;
+}
+
+.comics-navigator .next a:hover,
+.comics-navigator .prev a:hover {
+	background-color: #e8fe00;
+}
+
 .comics-navigator .next {
 	right: 0;
 }
@@ -10222,6 +10233,10 @@ h1.section-title {
 .nav-links span.page-numbers.current {
 	display: inline-block;
 	padding: 6px;
+}
+
+.single-comics .entry-meta {
+	text-align: center;
 }
 
 .archive-item-post,

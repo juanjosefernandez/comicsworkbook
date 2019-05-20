@@ -40,11 +40,27 @@ if ( ! function_exists( 'cw_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function cw_posted_by() {
-		$byline = sprintf(
+		global $post;
+		if(has_term( '', 'creator', $post->ID )) {
+			$creators = get_the_terms( $post->ID, 'creator' );
+			$outputcreators = '';
+			foreach($creators as $creator) {
+				$outputcreators .= '<a href="' . get_term_link($creator->term_id, 'creator'). '"">' . $creator->name . '</a>';
+			}
+			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard">' . $outputcreators . '</span>');
+		}
+		elseif(get_post_meta($post->ID, '_cw_contributor', true)) {
+			$contributor = get_post_meta( $post->ID, '_cw_contributor', true);
+			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard"><a href="' . get_permalink($contributor). '" class="url fn n">' . get_the_title($contributor) . '</a></span>');
+		} else {
+			$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'cw' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
+			);
+
+		}
+		
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 

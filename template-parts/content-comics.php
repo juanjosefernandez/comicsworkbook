@@ -7,6 +7,10 @@
  * @package cw2019
  */
 
+$pages = get_post_meta($post->ID, '_cw_pages', true);
+$curpage = isset($_GET['comicpage'])? $_GET['comicpage'] : 0;
+$totalpages = count($pages);
+$displaypage = $curpage + 1;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -18,31 +22,30 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
 				<?php
-				cw_posted_on();
+				//cw_posted_on();
 				cw_posted_by();
 				?>
+				
+
 			</div><!-- .entry-meta -->
-		<?php endif; ?>
+	
+
 	</header><!-- .entry-header -->
 
 	<?php //cw_post_thumbnail(); ?>
 	<div class="comics-toolbar">
 		<a href="<?php echo add_query_arg('layout', 'full', get_permalink());?>" class="btn btn-outline-dark btn-sm">
-			Full
+			Scroll
 		</a>
 		<a href="<?php echo add_query_arg('layout', 'paged', get_permalink());?>" class="btn btn-outline-dark btn-sm">
-			Paged
+			Pages
 		</a>
 	</div>
 	<div class="comics-content" data-mode="mode-paged">
-		<?php $pages = get_post_meta($post->ID, '_cw_pages', true);
-				$curpage = isset($_GET['comicpage'])? $_GET['comicpage'] : 0;
-				$totalpages = count($pages);
-			
+		<?php 
 				if($_GET['layout'] == 'full'):
 					foreach($pages as $page) {
 						$pageno = 1;
@@ -70,6 +73,10 @@
 					<?php if($curpage < $totalpages - 1):?>
 						</a>
 					<?php endif?>
+					
+					<?php if($_GET['layout'] != 'full') {		
+					echo '<p class="pageindex">' . $displaypage . '/' . $totalpages . '</p>';
+				}?>
 
 					<?php if($curpage < $totalpages - 1):?>
 					<div class="next">

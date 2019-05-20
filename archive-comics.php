@@ -63,6 +63,7 @@ get_header();
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div>
+	<?php get_template_part( 'sidebar-mobile');?>
 </div>
 <?php
 get_footer();

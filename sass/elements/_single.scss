@@ -49,6 +49,15 @@
 		position: absolute;
 		top: 20%;
 		font-size: 36px;
+		a {
+			background-color: $brand_pink;
+			color: white;
+			display: block;
+			padding: 4px 8px 0 8px;
+			&:hover {
+				background-color: $brand_yellow;
+			}
+		}
 	}
 
 	.next {
@@ -75,4 +84,8 @@
 .nav-links span.page-numbers.current {
 	display: inline-block;
 	padding: 6px;
+}
+
+.single-comics .entry-meta {
+	text-align: center;
 }

@@ -77,20 +77,26 @@ function cw_reviews_add_metabox() {
 
 	$cmb->add_field( array(
 		'name' => __( 'Page count', 'cw' ),
-		'id' => $prefix . 'pagecount ',
+		'id' => $prefix . 'numberpages',
 		'type' => 'text',
 	) );
 
 	$cmb->add_field( array(
 		'name' => __( 'Cost', 'cw' ),
 		'id' => $prefix . 'cost',
-		'type' => 'text_money',
+		'type' => 'text',
 	) );
 
 	$cmb->add_field( array(
 		'name' => __( 'Where to buy', 'cw' ),
 		'id' => $prefix . 'buyplace',
 		'type' => 'text_url',
+	) );
+
+	$cmb->add_field( array(
+		'name' => __( 'Where to buy Link Title', 'cw' ),
+		'id' => $prefix . 'buyplace_title',
+		'type' => 'text',
 	) );
 
 }

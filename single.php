@@ -48,7 +48,7 @@ endif;
 		</div><!-- #primary -->
 	</div>
 
-
+	<?php get_template_part( 'sidebar-mobile');?>
 </div>
 
 <?php

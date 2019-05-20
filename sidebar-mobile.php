@@ -12,7 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area col col-md-3 d-none d-md-block">
+<aside id="secondary-mobile-sidebar" class="widget-area col col-md-3 d-block d-sm-none">
 	<?php if(!is_home()){?>
 		<div class="aside-site-desc">
 			<a href="<?php bloginfo('url');?>">

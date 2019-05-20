@@ -45,8 +45,8 @@
 				<p class="custom-field publisher"><span class="label">Publisher:</span> <?php echo get_post_meta($post->ID, '_cw_publisher', true);?></p>
 			<?php endif;?>
 
-			<?php if(get_post_meta( $post->ID, '_cw_pagecount', true )):?>
-				<p class="custom-field pagecount"><span class="label">Page Count:</span> <?php echo get_post_meta($post->ID, '_cw_pagecount', true);?></p>
+			<?php if(get_post_meta( $post->ID, '_cw_numberpages', true )):?>
+				<p class="custom-field pagecount"><span class="label">Page Count:</span> <?php echo get_post_meta($post->ID, '_cw_numberpages', true);?></p>
 			<?php endif;?>
 
 			<?php if(get_post_meta( $post->ID, '_cw_cost', true )):?>
@@ -54,7 +54,7 @@
 			<?php endif;?>
 
 			<?php if(get_post_meta( $post->ID, '_cw_buyplace', true )):?>
-				<p class="custom-field buyplace"><span class="label">Where to buy:</span> <?php echo get_post_meta($post->ID, '_cw_buyplace', true);?></p>
+				<p class="custom-field buyplace"><span class="label">Where to buy:</span> <a target="_blank" href="<?php echo get_post_meta($post->ID, '_cw_buyplace', true);?>"><?php echo get_post_meta($post->ID, '_cw_buyplace_title', true);?></a></p>
 			<?php endif;?>
 			</div>
 		</div>

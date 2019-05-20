@@ -704,21 +704,6 @@ a:hover, a:active {
 	overflow: hidden;
 }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-}
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -10133,6 +10118,7 @@ a.recent-article img {
 .term-list a:hover, .term-list a.toggled {
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
 }
 
 h1.section-title {
@@ -10218,25 +10204,16 @@ h1.section-title {
 	left: 0;
 }
 
-.nav-links {
-	display: flex;
-	margin-top: 24px;
-}
-
-.nav-links a {
-	display: inline-block;
-	background-color: #ff00dc;
-	color: white;
-	padding: 6px;
-}
-
-.nav-links span.page-numbers.current {
-	display: inline-block;
-	padding: 6px;
-}
-
 .single-comics .entry-meta {
 	text-align: center;
+}
+
+.pageindex {
+	padding: 12px;
+}
+
+.page-id-93383 h1.entry-title {
+	display: none;
 }
 
 .archive-item-post,
@@ -10286,7 +10263,7 @@ h1.section-title {
 	bottom: 0;
 	margin: 0;
 	padding: 12px;
-	color: #333;
+	color: white;
 	font-size: 14px;
 	text-align: center;
 	background-color: #ff00dc;
@@ -10305,4 +10282,48 @@ h1.section-title {
 
 .comic-item-grid a:hover .comics-info {
 	padding-bottom: 48px;
+}
+
+.nav-links {
+	display: flex;
+	margin-top: 24px;
+	justify-content: space-between;
+}
+
+.nav-links .nav-pagenumber {
+	display: inline-block;
+	background-color: #e8fe00;
+	color: #333;
+	padding: 6px;
+}
+
+.nav-links a {
+	display: inline-block;
+	background-color: #ff00dc;
+	color: white;
+	padding: 6px;
+}
+
+.nav-links span.page-numbers.current {
+	display: inline-block;
+	padding: 6px;
+}
+
+.contributions {
+	border: 1px solid #ff00dc;
+}
+
+.contributions h2 {
+	background-color: #e8fe00;
+	color: #333;
+	padding: 6px;
+	font-size: 22px;
+}
+
+.contributor-article {
+	padding: 6px;
+}
+
+.contributor-article h3 {
+	font-size: 18px;
 }

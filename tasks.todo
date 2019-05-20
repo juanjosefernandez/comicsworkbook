@@ -40,13 +40,13 @@ New Requests:
 
 +- 1. Can you please reduce the size of the about the author plug-in? I would like the plug-ins i use to display text like the other text that you’ve included. (size 14, I believe) The box that I’m talking about is seen on this page: http://devcw.pablosel.in/11-02-2018/ It is created by the MEKS Smart Author Plugin in the Article Sidebar. 
 
-- 2. Can you activate the […] on the front page to expand the list and show the rest of the themes and topics.
++- 2. Can you activate the […] on the front page to expand the list and show the rest of the themes and topics.
 
--+ 3. In post listing pages, add a square preview image of the post. Make this box no bigger than the larger container. The containers can be seen here: http://devcw.pablosel.in/category/reviews/
++- 3. In post listing pages, add a square preview image of the post. Make this box no bigger than the larger container. The containers can be seen here: http://devcw.pablosel.in/category/reviews/
 
 +- 4. Please make the background behind the pentagon logo white instead of yellow in the sidebar.
 
-- 5. When posts are listed, please list the contributor associated with that post
++- 5. When posts are listed, please list the contributor associated with that post
 
 +- 6. List search results like the posts here: http://devcw.pablosel.in/category/reviews/.
 
@@ -60,43 +60,40 @@ NEWER 20/05/2019
 
 +--- 1)Changes on the Front page: Remove the fade at the top, change the text to black, from white, use the black logo on the front instead of the current white one.
 
--+-- 2) Please make the EXPLORE portion on the front page look like your new comics archive - uniform height and width, and make the text white on pink :)  http://devcw.pablosel.in/comics
++--- 2) Please make the EXPLORE portion on the front page look like your new comics archive - uniform height and width, and make the text white on pink :)  http://devcw.pablosel.in/comics
 
--- 3) In Post Archives, and all other post listings (like this one http://devcw.pablosel.in/category/essays/), really, please list the post author.
++-- 3) In Post Archives, and all other post listings (like this one http://devcw.pablosel.in/category/essays/), really, please list the post author.
 
--- 4) In Comics reviews: I cannot add “$” to price, adding that character erases that field. I would like to be able to list the currency.
++-- 4) In Comics reviews: I cannot add “$” to price, adding that character erases that field. I would like to be able to list the currency.
 
--- 5) In Comics reviews: I cannot list page count. It never appears.
++-- 5) In Comics reviews: I cannot list page count. It never appears.
 
--- 6) In Comics reviews I want the “Where to buy” field to be able to have a hyperlink, where the text is the name of the shop or site, and the link goes to the shop's website.
-
-
-
--- 7) Reviews Archive: Please make, http://devcw.pablosel.in/Reviews list out the reviews that are on the site,  it currently just links to a gif - I would like this list to appear similar to how posts are listed. Preview image, Review Name, Posted on Date, Contributor/ author of review. 
++-- 6) In Comics reviews I want the “Where to buy” field to be able to have a hyperlink, where the text is the name of the shop or site, and the link goes to the shop's website.
 
 
 
--- 8) On Individual Comics posts, make the reading mode that you are on be white text on black background
-
--- 9)  On Individual Comics posts, relabel the reading modes "Scroll" "Pages" 
-
--- 10)  On Individual Comics posts, can you list the page that the reader is on under the comic, like 3/14? If they are on the third image out of 14.
-
--- 11) Please make the comics navigation arrow be white arrow on pink box. in comics posts, if possible - http://devcw.pablosel.in/comics/06-01-2018/?layout=paged&comicpage=1
-
--- 12) Please list the contributor name, associated with that Individual comics post above the "Scroll" and "Pages" options, as a hyperlink to that contributor page.
-
--- 13) When on category pages that list posts within that category , make it so that you can see what page # you are on, near to the previous, next, random buttons. Like this page: http://devcw.pablosel.in/category/essays/page/2/
++-- 7) Reviews Archive: Please make, http://devcw.pablosel.in/Reviews list out the reviews that are on the site,  it currently just links to a gif - I would like this list to appear similar to how posts are listed. Preview image, Review Name, Posted on Date, Contributor/ author of review. 
 
 
 
--- 14) On the comics archive: http://devcw.pablosel.in/category/essays/ . please make the text white.
++-- 8) On Individual Comics posts, make the reading mode that you are on be white text on black background
+
++-- 9)  On Individual Comics posts, relabel the reading modes "Scroll" "Pages" 
+
++-- 10)  On Individual Comics posts, can you list the page that the reader is on under the comic, like 3/14? If they are on the third image out of 14.
++-- 11) Please make the comics navigation arrow be white arrow on pink box. in comics posts, if possible - http://devcw.pablosel.in/comics/06-01-2018/?layout=paged&comicpage=1
+
++-- 12) Please list the contributor name, associated with that Individual comics post above the "Scroll" and "Pages" options, as a hyperlink to that contributor page.
+
++-- 13) When on category pages that list posts within that category , make it so that you can see what page # you are on, near to the previous, next, random buttons. Like this page: http://devcw.pablosel.in/category/essays/page/2/
+
++-- 14) On the comics archive: http://devcw.pablosel.in/category/essays/ . please make the text white.
 
 OTHERS
 
--- 1. Can you hide the page title, "Read" on the page:  http://devcw.pablosel.in/read/ 
--- 2. Is it possible to add categories to reviews? I would like reviews to appear among the latest posts on the READ Page:   http://devcw.pablosel.in/read/ (Or is it not possible to call up both POSTS and REVIEWS because they are of different types?)
++-- 1. Can you hide the page title, "Read" on the page:  http://devcw.pablosel.in/read/ 
++-- 2. Is it possible to add categories to reviews? I would like reviews to appear among the latest posts on the READ Page:   http://devcw.pablosel.in/read/ (Or is it not possible to call up both POSTS and REVIEWS because they are of different types?)
 +-- 3. For Mobile: Currently, the sidebar content appears before the page content. Can we switch it so that the post/page content appears before the sidebar content on mobile?
--- 4. On each contributor page I would like to display a list recent/all of reviews by that contributor (if any), posts by that contributor, all comics by that contributor. 
++-- 4. On each contributor page I would like to display a list recent/all of reviews by that contributor (if any), posts by that contributor, all comics by that contributor. 
 
--- Si puedes, aggrega la opcion para cambiar el color del texto. De momento no puedo y tengo blanco sobre blanco :)
++-- Si puedes, aggrega la opcion para cambiar el color del texto. De momento no puedo y tengo blanco sobre blanco :)

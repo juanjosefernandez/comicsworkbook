@@ -53,6 +53,52 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<div class="contributions">
+		<?php
+			$types = array(
+				'comics',
+				'post',
+				'reviews'
+			);
+			foreach($types as $type) {
+
+			
+		 
+			$args = array(
+				'post_type' 	=> $type,
+				'numberposts' 	=> -1,
+				'post_status' 	=> 'publish',
+				'meta_key' 		=> '_cw_contributor',
+				'meta_value'	=> $post->ID,
+				'orderby'		=> 'date',
+				'order'			=> 'ASC'
+			);
+			$contributors_posts = get_posts($args);
+
+			if($contributors_posts) {
+				$ptype = get_post_type_object($type);
+				?>
+				<h2><?php echo $ptype->labels->name;?></h2>
+				<?php
+				foreach($contributors_posts as $cpost) {
+					?>
+					
+					<div class="contributor-article">
+						<h3>
+							<a href="<?php echo get_permalink($cpost->ID);?>">
+								<?php echo $cpost->post_title;?>
+							</a>
+						</h3>
+					</div>
+
+					<?php
+				}
+			}
+
+			}
+		?>
+	</div>
+
 	<footer class="entry-footer">
 		<?php cw_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

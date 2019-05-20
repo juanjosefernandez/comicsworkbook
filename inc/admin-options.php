@@ -51,6 +51,14 @@ function cw_register_main_options_metabox() {
 		'default' => '#ffffff',
 	) );
 
+	$main_options->add_field( array(
+		'name'    => esc_html__( 'Home Text color', 'cmb2' ),
+		'desc'    => esc_html__( 'Choose a contrasting color for readability', 'cmb2' ),
+		'id'      => 'txt_color',
+		'type'    => 'colorpicker',
+		'default' => '#ffffff',
+	) );
+
 
 	/**
 	 * Registers secondary options page, and set main item as parent.

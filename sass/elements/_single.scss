@@ -69,23 +69,16 @@
 	}
 }
 
-.nav-links {
-	display: flex;
-	margin-top: 24px;
-}
-
-.nav-links a {
-	display: inline-block;
-	background-color: $brand_pink;
-	color: white;
-	padding: 6px;
-}
-
-.nav-links span.page-numbers.current {
-	display: inline-block;
-	padding: 6px;
-}
-
 .single-comics .entry-meta {
 	text-align: center;
+}
+
+.pageindex {
+	padding: 12px;
+}
+
+.page-id-93383 {
+	h1.entry-title {
+		display: none;
+	}
 }

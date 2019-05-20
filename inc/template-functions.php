@@ -98,6 +98,8 @@ function cw_get_the_posts_navigation( $args = array() ) {
         $next_link = get_previous_posts_link( $args['next_text'] );
         $prev_link = get_next_posts_link( $args['prev_text'] );
  		$random = get_posts($randargs);
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        //var_dump($paged);
 
  		if($random) {
  			foreach($random as $rand) {
@@ -107,6 +109,10 @@ function cw_get_the_posts_navigation( $args = array() ) {
 
         if ( $prev_link ) {
             $navigation .= '<div class="nav-previous">' . $prev_link . '</div>';
+        }
+
+        if ($paged) {
+            $navigation .= '<div class="nav-pagenumber">Page ' . $paged . '</div>';
         }
 
         if ($rand_link) {

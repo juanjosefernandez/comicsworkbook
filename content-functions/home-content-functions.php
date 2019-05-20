@@ -1,6 +1,8 @@
 <?php
 
 function home_term_list($taxonomy) {
+	$home_options = get_homepage_options();
+
 	if(taxonomy_exists( $taxonomy )) {
 		$terms = get_terms($taxonomy, array(
 			'hide_empty' => false, 'number' => 0)
@@ -16,19 +18,15 @@ function home_term_list($taxonomy) {
 				}
 
 				$output .= '<li class="' . $class . '">';
-				$output .= '<a href="' . get_term_link( $term, $taxonomy ) . '">';
+				$output .= '<a style="color:' . $home_options['txt_color']. '" href="' . get_term_link( $term, $taxonomy ) . '">';
 				$output .=  $term->name;
 				$output	.= '</a>';
 				$output .= '</li>';
-				
-				if($key == 3) {
-					$output .= '<li class="term-link"><a href="#" class="more-terms" data-taxonomy="' . $taxonomy . '">...</a></li>';	
-				}
 			}
 		}
 
 		
-
+		$output .= '<li class="term-link"><a style="color:' . $home_options['txt_color']. '" href="#" class="more-terms" data-taxonomy="' . $taxonomy . '">...</a></li>';
 		$output .= '</ul>';
 
 		return $output;

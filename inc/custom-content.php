@@ -96,6 +96,7 @@ function cptui_register_my_cpts() {
 		"rewrite" => array( "slug" => "Reviews", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail" ),
+		"taxonomies" => array("category")
 	);
 
 	register_post_type( "reviews", $args );

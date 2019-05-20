@@ -35,12 +35,16 @@ $displaypage = $curpage + 1;
 
 	</header><!-- .entry-header -->
 
-	<?php //cw_post_thumbnail(); ?>
+	<?php
+		$activepaged = ($_GET['layout'] == 'paged' || !$_GET['layout'])? 'active' : '';
+		$activescroll = ($_GET['layout'] == 'full')? 'active' : '';
+
+	?>
 	<div class="comics-toolbar">
-		<a href="<?php echo add_query_arg('layout', 'full', get_permalink());?>" class="btn btn-outline-dark btn-sm">
+		<a href="<?php echo add_query_arg('layout', 'full', get_permalink());?>" class="btn btn-outline-dark btn-sm <?php echo $activescroll;?>">
 			Scroll
 		</a>
-		<a href="<?php echo add_query_arg('layout', 'paged', get_permalink());?>" class="btn btn-outline-dark btn-sm">
+		<a href="<?php echo add_query_arg('layout', 'paged', get_permalink());?>" class="btn btn-outline-dark btn-sm <?php echo $activepaged;?>">
 			Pages
 		</a>
 	</div>

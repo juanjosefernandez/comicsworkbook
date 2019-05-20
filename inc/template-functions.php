@@ -55,7 +55,7 @@ function alter_query_contributors($query) {
 	if(is_post_type_archive( 'contributors' )) {
 		$query->set('orderby', 'title');
 		$query->set('order', 'ASC');
-        $query->set('posts_per_page', '0');
+        $query->set('posts_per_page', -1);
 		remove_all_actions( '__after_loop' );
 	} else {
 		return;

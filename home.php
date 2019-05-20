@@ -73,7 +73,7 @@ get_header();
 			<div class="row row-content">
 				<?php 
 						$args = array(
-							'numberposts' => 5,
+							'numberposts' => 8,
 							'post_type' => 'comics',
 							'post_status' => 'publish'
 						);

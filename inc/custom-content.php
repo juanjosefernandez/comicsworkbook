@@ -132,7 +132,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "themes", array( "post" ), $args );
+	register_taxonomy( "themes", array( "post", "reviews", "comics" ), $args );
 
 	/**
 	 * Taxonomy: Media.
@@ -244,7 +244,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "topics", array( "post" ), $args );
+	register_taxonomy( "topics", array( "post", "reviews", "comics"), $args );
 }
 
 add_action( 'init', 'cptui_register_my_taxes' );

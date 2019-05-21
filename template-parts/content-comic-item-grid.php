@@ -17,7 +17,7 @@
 	<a style="background-image:url(<?php echo $thumbsrc[0];?>);" title="<?php echo the_title();?>" href="<?php echo get_permalink();?>">
 		<div class="comics-info">
 			<h1><?php the_title();?></h1>
-			<p><?php echo cw_clean_tags($post->ID, 'creator', 'by ', ', ');?></p>
+			<p><?php echo cw_plain_posted_by($post->ID);?></p>
 			<p><?php echo cw_clean_tags($post->ID, 'series', 'Series: ', ', ');?></p>
 		</div>
 	</a>

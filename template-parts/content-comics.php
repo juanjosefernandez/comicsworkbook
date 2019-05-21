@@ -26,7 +26,7 @@ $displaypage = $curpage + 1;
 			<div class="entry-meta">
 				<?php
 				//cw_posted_on();
-				cw_posted_by();
+				cw_posted_by($post->ID);
 				?>
 				
 

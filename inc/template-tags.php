@@ -70,6 +70,30 @@ if ( ! function_exists( 'cw_posted_by' ) ) :
 	}
 endif;
 
+function cw_plain_posted_by( $post_id, $prefix = 'by') {
+	if(get_post_meta($post_id, '_cw_contributor', true)) {
+			$contributor = get_post_meta( $post_id, '_cw_contributor', true);
+			$byline = sprintf(esc_html_x( $prefix .' %s', 'post author', 'cw' ), '<span class="author-vcard">' . get_the_title($contributor) . '</span>');
+		} elseif(has_term( '', 'creator', $post_id )) {
+			$creators = get_the_terms( $post_id, 'creator' );
+			$outputcreators = '';
+			foreach($creators as $creator) {
+				$outputcreators .= $creator->name;
+			}
+			$byline = sprintf(esc_html_x( $prefix . ' %s', 'post author', 'cw' ), '<span class="author-vcard">' . $outputcreators . '</span>');
+		}
+		 else {
+			$byline = sprintf(
+			/* translators: %s: post author. */
+			esc_html_x( $prefix . ' %s', 'post author', 'cw' ),
+			'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
+			);
+
+		}
+
+		echo '<span class="byline"> ' . $byline . '</span>';
+}
+
 if ( ! function_exists( 'cw_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.

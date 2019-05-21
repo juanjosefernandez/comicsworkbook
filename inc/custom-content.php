@@ -96,7 +96,7 @@ function cptui_register_my_cpts() {
 		"rewrite" => array( "slug" => "reviews", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail", "author" ),
-		"taxonomies" => array("category")
+		"taxonomies" => array("category", "topics", "themes")
 	);
 
 	register_post_type( "reviews", $args );
@@ -132,7 +132,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "themes_tax", array( "post" ), $args );
+	register_taxonomy( "themes", array( "post" ), $args );
 
 	/**
 	 * Taxonomy: Media.

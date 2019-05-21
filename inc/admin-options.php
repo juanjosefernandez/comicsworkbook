@@ -55,7 +55,7 @@ function cw_register_main_options_metabox() {
 		'name'    => esc_html__( 'Home Text color', 'cmb2' ),
 		'desc'    => esc_html__( 'Choose a contrasting color for readability', 'cmb2' ),
 		'id'      => 'txt_color',
-		'type'    => 'colorpicker',
+		'type'   => 'colorpicker',
 		'default' => '#ffffff',
 	) );
 
@@ -103,3 +103,47 @@ function cw_register_main_options_metabox() {
 
 }
 add_action( 'cmb2_admin_init', 'cw_register_main_options_metabox' );
+
+
+add_filter('manage_reviews_posts_columns', 'cw_reviews_columns');
+
+function cw_reviews_columns($columns) {
+	
+	$columns = array(
+		'cb'			=> $columns['cb'],
+		'title'			=> __('Title'),
+		'contributor' 	=> __('Author / Creator / Contributor'),
+		'categories'	=> __('Categories'),
+		'date'			=> __('Date'),
+	);
+	
+
+	return $columns;
+}
+
+add_filter('manage_comics_posts_columns', 'cw_comics_columns');
+
+function cw_comics_columns($columns) {
+	
+	$columns = array(
+		'cb'			=> $columns['cb'],
+		'title'			=> __('Title'),
+		'contributor' 	=> __('Author / Creator / Contributor'),
+		'categories'	=> __('Categories'),
+		'date'			=> __('Date'),
+	);
+	
+
+	return $columns;
+}
+
+add_action('manage_reviews_posts_custom_column', 'cw_contributor_column', 10, 2);
+add_action('manage_comics_posts_custom_column', 'cw_contributor_column', 10, 2);
+
+
+function cw_contributor_column( $column, $post_id ) {
+	if($column === 'contributor') {
+		echo cw_posted_by( $post_id, '' );	
+	}
+}
+

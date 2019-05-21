@@ -31,7 +31,7 @@ function cptui_register_my_cpts() {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "comics", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail" ),
+		"supports" => array( "title", "editor", "thumbnail", "author" ),
 	);
 
 	register_post_type( "comics", $args );
@@ -95,7 +95,7 @@ function cptui_register_my_cpts() {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "reviews", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail" ),
+		"supports" => array( "title", "editor", "thumbnail", "author" ),
 		"taxonomies" => array("category")
 	);
 

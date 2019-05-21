@@ -39,23 +39,26 @@ if ( ! function_exists( 'cw_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function cw_posted_by() {
-		global $post;
-		if(get_post_meta($post->ID, '_cw_contributor', true)) {
-			$contributor = get_post_meta( $post->ID, '_cw_contributor', true);
-			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard"><a href="' . get_permalink($contributor). '" class="url fn n">' . get_the_title($contributor) . '</a></span>');
-		} elseif(has_term( '', 'creator', $post->ID )) {
-			$creators = get_the_terms( $post->ID, 'creator' );
+	function cw_posted_by( $post_id = null, $prefix = 'by') {
+		if($post_id != null) {
+			global $post;
+			$post_id = $post->ID;
+		}
+		if(get_post_meta($post_id, '_cw_contributor', true)) {
+			$contributor = get_post_meta( $post_id, '_cw_contributor', true);
+			$byline = sprintf(esc_html_x( $prefix .' %s', 'post author', 'cw' ), '<span class="author-vcard"><a href="' . get_permalink($contributor). '" class="url fn n">' . get_the_title($contributor) . '</a></span>');
+		} elseif(has_term( '', 'creator', $post_id )) {
+			$creators = get_the_terms( $post_id, 'creator' );
 			$outputcreators = '';
 			foreach($creators as $creator) {
 				$outputcreators .= '<a href="' . get_term_link($creator->term_id, 'creator'). '"">' . $creator->name . '</a>';
 			}
-			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard">' . $outputcreators . '</span>');
+			$byline = sprintf(esc_html_x( $prefix . ' %s', 'post author', 'cw' ), '<span class="author-vcard">' . $outputcreators . '</span>');
 		}
 		 else {
 			$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'cw' ),
+			esc_html_x( $prefix . ' %s', 'post author', 'cw' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 			);
 

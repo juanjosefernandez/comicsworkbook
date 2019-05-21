@@ -30,7 +30,7 @@ function cw_cmb2_add_metabox() {
 	$cmb = new_cmb2_box( array(
 		'id'           => $prefix . 'cw',
 		'title'        => __( 'Contributor', 'cw' ),
-		'object_types' => array( 'page', 'post', 'comics' ),
+		'object_types' => array( 'page', 'post', 'comics', 'reviews' ),
 		'context'      => 'side',
 		'priority'     => 'high',
 	) );

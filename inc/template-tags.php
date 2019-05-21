@@ -41,7 +41,10 @@ if ( ! function_exists( 'cw_posted_by' ) ) :
 	 */
 	function cw_posted_by() {
 		global $post;
-		if(has_term( '', 'creator', $post->ID )) {
+		if(get_post_meta($post->ID, '_cw_contributor', true)) {
+			$contributor = get_post_meta( $post->ID, '_cw_contributor', true);
+			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard"><a href="' . get_permalink($contributor). '" class="url fn n">' . get_the_title($contributor) . '</a></span>');
+		} elseif(has_term( '', 'creator', $post->ID )) {
 			$creators = get_the_terms( $post->ID, 'creator' );
 			$outputcreators = '';
 			foreach($creators as $creator) {
@@ -49,10 +52,7 @@ if ( ! function_exists( 'cw_posted_by' ) ) :
 			}
 			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard">' . $outputcreators . '</span>');
 		}
-		elseif(get_post_meta($post->ID, '_cw_contributor', true)) {
-			$contributor = get_post_meta( $post->ID, '_cw_contributor', true);
-			$byline = sprintf(esc_html_x( 'by %s', 'post author', 'cw' ), '<span class="author-vcard"><a href="' . get_permalink($contributor). '" class="url fn n">' . get_the_title($contributor) . '</a></span>');
-		} else {
+		 else {
 			$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'cw' ),

@@ -134,6 +134,24 @@ function cw_scripts() {
 add_action( 'wp_enqueue_scripts', 'cw_scripts' );
 
 
+function cw_googleads() {
+	?>
+
+		<!--Google ADS-->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-1128329047371350",
+		    enable_page_level_ads: true
+		  });
+		</script>
+
+
+	<?php
+}
+
+add_action('wp_head', 'cw_googleads');
+
 /**
  * Implement the Custom Header feature.
  */

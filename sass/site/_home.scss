@@ -53,3 +53,28 @@ a.recent-article img {
 		}
 	}
 }
+
+.featured-contents {
+	position: relative;
+	height: 315px;
+	margin-bottom: 24px;
+	overflow: hidden;
+	img {
+		position: absolute;
+		bottom: 0;
+		z-index: 10;
+	}
+	h1 {
+		background-color: #ff00dc;
+		font-size: 24px;
+		position: absolute;
+		top: 0;
+		z-index: 20;
+
+		a {
+			color: white;
+			display: block;
+			padding: 12px;
+		}
+	}
+}

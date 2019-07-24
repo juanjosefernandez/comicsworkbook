@@ -10121,6 +10121,33 @@ a.recent-article img {
 	color: white;
 }
 
+.featured-contents {
+	position: relative;
+	height: 315px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+.featured-contents img {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
+
+.featured-contents h1 {
+	background-color: #ff00dc;
+	font-size: 24px;
+	position: absolute;
+	top: 0;
+	z-index: 20;
+}
+
+.featured-contents h1 a {
+	color: white;
+	display: block;
+	padding: 12px;
+}
+
 h1.section-title {
 	color: #333;
 	padding: 6px;
@@ -10243,6 +10270,7 @@ h1.section-title {
 
 .post-type-archive-contributors .table-contributors {
 	border-bottom: 1px dashed #333;
+	margin-bottom: 32px;
 }
 
 .comic-item-grid {

@@ -12,6 +12,52 @@ get_header();
 
 	<div id="primary" class="content-area home-section">
 		<main id="main" class="site-main">
+
+			<?php 
+				$locations = get_nav_menu_locations();
+				$menu_id = $locations['featured-content'];
+				$menuitems = wp_get_nav_menu_items( $menu_id );
+				$item_left = $menuitems[0]->object_id;
+				$imgleftthid = get_post_thumbnail_id($item_left);
+				$image_left = wp_get_attachment_image_src($imgleftthid, 'large');
+
+				$item_right = $menuitems[1]->object_id;
+				$imgrightthid = get_post_thumbnail_id($item_right);
+				$image_right = wp_get_attachment_image_src($imgrightthid, 'large');
+			?>
+			<div class="row">
+				<div class="col-sm">
+					<h1 class="section-title">Featured</h1>
+				</div>
+			</div>
+			<div class="row featured-contents">
+				<div class="col-sm">
+				
+					<h1>
+						<a href="<?php echo get_permalink($item_left);?>">
+							<?php echo get_the_title($item_left);?>		
+						</a>
+					</h1>
+
+					<a href="<?php echo get_permalink($item_left);?>">
+						<img src="<?php echo $image_left[0];?>" alt="<?php echo get_the_title($item_left);?>">
+					</a>
+
+				</div>
+
+				<div class="col-sm">
+					
+
+					<h1>
+						<a href="<?php echo get_permalink($item_right);?>">
+							<?php echo get_the_title($item_right);?>		
+						</a>
+					</h1>
+
+					<img src="<?php echo $image_right[0];?>" alt="<?php echo get_the_title($item_right);?>">
+					
+				</div>
+			</div>
 			
 			<div class="row featured-sections">
 				<div class="col-sm">

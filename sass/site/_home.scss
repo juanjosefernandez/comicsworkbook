@@ -64,6 +64,7 @@ a.recent-article img {
 		@media screen and (max-width: 768px) {
 			height: 215px;
 			margin-bottom: 24px;
+			overflow: hidden;
 		}
 	}
 
@@ -71,6 +72,7 @@ a.recent-article img {
 		position: absolute;
 		bottom: 0;
 		z-index: 10;
+		max-width: 100%;
 	}
 	h1 {
 		background-color: #ff00dc;

@@ -10135,6 +10135,7 @@ a.recent-article img {
 	.featured-contents .home-article-featured {
 		height: 215px;
 		margin-bottom: 24px;
+		overflow: hidden;
 	}
 }
 
@@ -10142,6 +10143,7 @@ a.recent-article img {
 	position: absolute;
 	bottom: 0;
 	z-index: 10;
+	max-width: 100%;
 }
 
 .featured-contents h1 {

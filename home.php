@@ -54,7 +54,9 @@ get_header();
 						</a>
 					</h1>
 
-					<img src="<?php echo $image_right[0];?>" alt="<?php echo get_the_title($item_right);?>">
+					<a href="<?php echo get_permalink($item_right);?>">
+						<img src="<?php echo $image_right[0];?>" alt="<?php echo get_the_title($item_right);?>">
+					</a>
 					
 				</div>
 			</div>

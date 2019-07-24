@@ -56,9 +56,17 @@ a.recent-article img {
 
 .featured-contents {
 	position: relative;
-	height: 315px;
 	margin-bottom: 24px;
 	overflow: hidden;
+
+	.home-article-featured {
+		height: 315px;
+		@media screen and (max-width: 768px) {
+			height: 215px;
+			margin-bottom: 24px;
+		}
+	}
+
 	img {
 		position: absolute;
 		bottom: 0;

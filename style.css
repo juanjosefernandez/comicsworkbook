@@ -10123,9 +10123,19 @@ a.recent-article img {
 
 .featured-contents {
 	position: relative;
-	height: 315px;
 	margin-bottom: 24px;
 	overflow: hidden;
+}
+
+.featured-contents .home-article-featured {
+	height: 315px;
+}
+
+@media screen and (max-width: 768px) {
+	.featured-contents .home-article-featured {
+		height: 215px;
+		margin-bottom: 24px;
+	}
 }
 
 .featured-contents img {

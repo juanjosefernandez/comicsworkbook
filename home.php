@@ -31,7 +31,7 @@ get_header();
 				</div>
 			</div>
 			<div class="row featured-contents">
-				<div class="col-sm">
+				<div class="col-sm home-article-featured">
 				
 					<h1>
 						<a href="<?php echo get_permalink($item_left);?>">
@@ -45,7 +45,7 @@ get_header();
 
 				</div>
 
-				<div class="col-sm">
+				<div class="col-sm home-article-featured">
 					
 
 					<h1>
